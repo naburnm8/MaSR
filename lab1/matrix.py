@@ -9,11 +9,11 @@ def print_matrix(matrix: list[list[int]]) -> None:
 def set_matrix_cin(matrix: list[list[int]]) -> None:
     for i in range(len(matrix)):
         for j in range(len(matrix[i])):
-            readyToLeave = False
-            while not readyToLeave:
+            ready_to_leave = False
+            while not ready_to_leave:
                 try:
                     matrix[i][j] = int(input(f"Now entering for position i: {i}, j: {j}: "))
-                    readyToLeave = True
+                    ready_to_leave = True
                 except ValueError:
                     print("Value error!")
 
